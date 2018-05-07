@@ -1,0 +1,14 @@
+[Unit]
+Description=zouhuigang zcron server
+Documentation=https://github.com/zouhuigang
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/local/software/zcron
+ExecStart=/usr/local/software/zcron/zcron
+Restart=on-failure
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

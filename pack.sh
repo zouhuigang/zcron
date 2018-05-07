@@ -1,6 +1,6 @@
 #!/bin/sh
 
-tarfile="webcron-$1.tar.gz"
+tarfile="zcron-$1.tar.gz"
 
 echo "开始打包$tarfile..."
 
@@ -9,4 +9,4 @@ export GOOS=linux
 
 bee pack
 
-mv webcron.tar.gz $tarfile
+mv zcron.tar.gz $tarfile
